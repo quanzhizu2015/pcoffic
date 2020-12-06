@@ -1,0 +1,60 @@
+.wrap{
+    padding:0.1rem 1.48rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    .logo{
+        img{
+            width:2.08rem;
+            height:0.42rem;
+        }
+    }
+    .nav-list{
+        display: flex;
+        .item{
+            color:#333333;
+            font-size:0.18rem;
+            margin-left:0.56rem;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            &.active{
+                .nav-title{
+                    color:#204BD6;
+                }
+                
+            }
+            .line{
+                width:0.72rem;
+                height:0.02rem;
+                background: #204BD6;
+                position: absolute;
+                top:0.3rem;
+                z-index:1;
+               
+            }
+            .sub-list{
+                position: absolute;
+                top:0.4rem;
+                left:50%;
+                transform: translateX(-50%);
+                width:1.7rem;
+                border-radius: 0px 0px 0.08rem 0.08rem;
+                background: #fff;
+                text-align: center;
+                z-index:99;
+                .list{
+                    li{
+                        font-size:0.16rem;
+                        margin:0.1rem;
+                        cursor: pointer;
+                        &.active{
+                           color:#204BD6; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
